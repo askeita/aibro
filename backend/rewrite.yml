@@ -1,0 +1,6 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.aibro.UpgradeToJava21
+displayName: "Upgrade project to Java 21"
+description: "Apply OpenRewrite's Java 21 migration recipe to the codebase."
+recipeList:
+  - org.openrewrite.java.migrate.UpgradeToJava21

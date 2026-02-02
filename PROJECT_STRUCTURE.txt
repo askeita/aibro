@@ -1,0 +1,142 @@
+aibro/
+├── backend/                          # Java Spring Boot Backend
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/aibro/
+│   │   │   │   ├── AibroApplication.java
+│   │   │   │   ├── config/
+│   │   │   │   │   ├── SecurityConfig.java
+│   │   │   │   │   ├── WebConfig.java
+│   │   │   │   │   └── AudioConfig.java
+│   │   │   │   ├── controller/
+│   │   │   │   │   ├── SessionController.java
+│   │   │   │   │   ├── AIController.java
+│   │   │   │   │   ├── AudioController.java
+│   │   │   │   │   └── ReportController.java
+│   │   │   │   ├── service/
+│   │   │   │   │   ├── ai/
+│   │   │   │   │   │   ├── AIService.java
+│   │   │   │   │   │   ├── ClaudeService.java
+│   │   │   │   │   │   ├── GPTService.java
+│   │   │   │   │   │   └── GeminiService.java
+│   │   │   │   │   ├── audio/
+│   │   │   │   │   │   ├── AudioProcessingService.java
+│   │   │   │   │   │   ├── SpeechRecognitionService.java
+│   │   │   │   │   │   ├── SpeakerDiarizationService.java
+│   │   │   │   │   │   └── TextToSpeechService.java
+│   │   │   │   │   ├── session/
+│   │   │   │   │   │   ├── SessionService.java
+│   │   │   │   │   │   └── ParticipantService.java
+│   │   │   │   │   └── report/
+│   │   │   │   │       └── ReportGenerationService.java
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── entity/
+│   │   │   │   │   │   ├── Session.java
+│   │   │   │   │   │   ├── Participant.java
+│   │   │   │   │   │   ├── Contribution.java
+│   │   │   │   │   │   └── Report.java
+│   │   │   │   │   └── dto/
+│   │   │   │   │       ├── SessionDTO.java
+│   │   │   │   │       ├── ParticipantDTO.java
+│   │   │   │   │       ├── AIContributionDTO.java
+│   │   │   │   │       └── ReportDTO.java
+│   │   │   │   ├── repository/
+│   │   │   │   │   ├── SessionRepository.java
+│   │   │   │   │   ├── ParticipantRepository.java
+│   │   │   │   │   ├── ContributionRepository.java
+│   │   │   │   │   └── ReportRepository.java
+│   │   │   │   └── websocket/
+│   │   │   │       ├── WebSocketConfig.java
+│   │   │   │       └── AudioStreamHandler.java
+│   │   │   └── resources/
+│   │   │       ├── application.yml
+│   │   │       ├── application-dev.yml
+│   │   │       └── application-prod.yml
+│   │   └── test/
+│   ├── pom.xml
+│   └── README.md
+│
+├── frontend/                         # Flutter Application
+│   ├── lib/
+│   │   ├── main.dart
+│   │   ├── app.dart
+│   │   ├── core/
+│   │   │   ├── constants/
+│   │   │   │   ├── api_constants.dart
+│   │   │   │   ├── app_constants.dart
+│   │   │   │   └── colors.dart
+│   │   │   ├── services/
+│   │   │   │   ├── api_service.dart
+│   │   │   │   ├── audio_service.dart
+│   │   │   │   ├── websocket_service.dart
+│   │   │   │   └── storage_service.dart
+│   │   │   └── utils/
+│   │   │       ├── audio_utils.dart
+│   │   │       └── date_utils.dart
+│   │   ├── features/
+│   │   │   ├── auth/
+│   │   │   │   ├── screens/
+│   │   │   │   │   └── api_keys_screen.dart
+│   │   │   │   ├── widgets/
+│   │   │   │   │   └── api_key_input.dart
+│   │   │   │   └── providers/
+│   │   │   │       └── api_keys_provider.dart
+│   │   │   ├── session/
+│   │   │   │   ├── screens/
+│   │   │   │   │   ├── session_setup_screen.dart
+│   │   │   │   │   ├── session_active_screen.dart
+│   │   │   │   │   └── session_list_screen.dart
+│   │   │   │   ├── widgets/
+│   │   │   │   │   ├── participant_input.dart
+│   │   │   │   │   ├── ai_settings_panel.dart
+│   │   │   │   │   ├── audio_visualizer.dart
+│   │   │   │   │   └── contribution_card.dart
+│   │   │   │   └── providers/
+│   │   │   │       ├── session_provider.dart
+│   │   │   │       └── audio_provider.dart
+│   │   │   ├── settings/
+│   │   │   │   ├── screens/
+│   │   │   │   │   └── settings_screen.dart
+│   │   │   │   ├── widgets/
+│   │   │   │   │   ├── ai_model_selector.dart
+│   │   │   │   │   ├── voice_selector.dart
+│   │   │   │   │   └── frequency_tuner.dart
+│   │   │   │   └── providers/
+│   │   │   │       └── settings_provider.dart
+│   │   │   └── reports/
+│   │   │       ├── screens/
+│   │   │       │   ├── report_list_screen.dart
+│   │   │       │   └── report_detail_screen.dart
+│   │   │       ├── widgets/
+│   │   │       │   ├── report_card.dart
+│   │   │       │   └── transcript_view.dart
+│   │   │       └── providers/
+│   │   │           └── report_provider.dart
+│   │   └── models/
+│   │       ├── session.dart
+│   │       ├── participant.dart
+│   │       ├── contribution.dart
+│   │       ├── report.dart
+│   │       └── ai_settings.dart
+│   ├── android/
+│   ├── ios/
+│   ├── windows/
+│   ├── macos/
+│   ├── linux/
+│   ├── web/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── sounds/
+│   │       └── notification.mp3
+│   ├── pubspec.yaml
+│   └── README.md
+│
+├── docs/
+│   ├── architecture.md
+│   ├── api-documentation.md
+│   ├── setup-guide.md
+│   └── user-guide.md
+│
+├── .gitignore
+└── README.md
+

@@ -1,0 +1,17 @@
+/target/
+/bin/
+
+# IDE/editor settings
+/.vscode/
+.idea/
+
+# Eclipse/other IDE metadata
+/.classpath
+/.project
+/.settings/
+
+# IntelliJ build output
+/out/
+
+# Local logs
+/logs/
