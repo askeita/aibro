@@ -35,6 +35,8 @@ An intelligent brainstorming assistant that listens to conversations, analyzes d
 
 ## Getting Started
 
+For a more detailed, step-by-step setup guide, see [QUICKSTART.md](QUICKSTART.md).
+
 ### Prerequisites
 
 - Java 17 or higher

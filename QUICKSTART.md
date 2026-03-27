@@ -193,9 +193,9 @@ Swagger UI available at: `http://localhost:8080/swagger-ui.html`
 ## Support
 
 For issues and questions:
-- Check the full README.md
-- Review DEPLOYMENT_GUIDE.md for production setup
-- Check FLUTTER_IMPLEMENTATION_GUIDE.md for frontend details
+- Check the full README.md for an overview and usage details
+- Review this QUICKSTART.md for setup and basic troubleshooting
+- If you still need help, create an issue in the repository with logs, steps to reproduce, and environment details
 
 ## Useful Commands Reference
 

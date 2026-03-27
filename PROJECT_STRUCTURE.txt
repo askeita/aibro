@@ -54,9 +54,8 @@ aibro/
 │   │   │       └── application-prod.yml
 │   │   └── test/
 │   ├── pom.xml
-│   └── README.md
 │
-├── frontend/                         # Flutter Application
+├── flutter_app/                     # Flutter Application
 │   ├── lib/
 │   │   ├── main.dart
 │   │   ├── app.dart
@@ -129,13 +128,6 @@ aibro/
 │   │   └── sounds/
 │   │       └── notification.mp3
 │   ├── pubspec.yaml
-│   └── README.md
-│
-├── docs/
-│   ├── architecture.md
-│   ├── api-documentation.md
-│   ├── setup-guide.md
-│   └── user-guide.md
 │
 ├── .gitignore
 └── README.md
