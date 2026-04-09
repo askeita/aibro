@@ -1,4 +1,4 @@
-# AiBro - AI-Assisted Brainstorming Tool
+# AiBro - AI-assisted BRainstOrming tool
 
 An intelligent brainstorming assistant that listens to conversations, analyzes discussions, and contributes ideas using advanced AI models (Claude Sonnet 4.5, GPT-4, Gemini 2.0).
 
