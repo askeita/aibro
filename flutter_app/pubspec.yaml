@@ -48,7 +48,7 @@ dependencies:
   
   # Date & Time
   intl: ^0.18.1
-  package_info_plus: ^8.0.0
+  package_info_plus: ^9.0.1
   
   # JSON Serialization
   json_annotation: ^4.8.1
