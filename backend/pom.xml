@@ -81,7 +81,7 @@
         <!-- HTTP Client for AI APIs -->
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
+            <artifactId>okhttp-jvm</artifactId>
             <version>5.3.2</version>
         </dependency>
 
