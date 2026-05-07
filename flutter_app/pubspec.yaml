@@ -47,7 +47,7 @@ dependencies:
   printing: ^5.11.1
   
   # Date & Time
-  intl: ^0.18.1
+  intl: ^0.20.2
   package_info_plus: ^9.0.1
   
   # JSON Serialization
