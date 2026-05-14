@@ -31,7 +31,7 @@ dependencies:
   permission_handler: ^11.1.0
   
   # Local Storage
-  shared_preferences: ^2.2.2
+  shared_preferences: ^2.5.5
   sqflite: ^2.3.0
   path_provider: ^2.1.1
   
