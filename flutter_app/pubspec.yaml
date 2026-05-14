@@ -54,7 +54,7 @@ dependencies:
   json_annotation: ^4.8.1
   
   # Animations
-  lottie: ^2.7.0
+  lottie: ^3.3.3
   flutter_animate: ^4.3.0
 
   # Text-to-Speech for vocal prompts
