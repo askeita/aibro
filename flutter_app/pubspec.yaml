@@ -43,7 +43,7 @@ dependencies:
   url_launcher: ^6.3.0
   
   # PDF Generation for Reports
-  pdf: ^3.10.7
+  pdf: ^3.12.0
   printing: ^5.11.1
   
   # Date & Time
