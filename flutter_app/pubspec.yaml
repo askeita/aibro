@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
 
   # UI Components
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.9
   flutter_svg: ^2.0.9
   google_fonts: ^6.1.0
   
