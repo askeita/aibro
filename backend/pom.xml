@@ -22,6 +22,8 @@
         <java.version>25</java.version>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
+        <jackson-2-bom.version>2.21.7</jackson-2-bom.version>
+        <postgresql.version>42.7.12</postgresql.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
