@@ -17,8 +17,8 @@ import java.util.Arrays;
 @EnableWebSecurity
 /**
  * Configures HTTP security and CORS for the backend APIs and WebSocket
- * endpoints. Currently this configuration is permissive and intended for
- * local development.
+ * endpoints. API and WebSocket routes are stateless and do not use
+ * cookie-based authentication, so CSRF is enforced only on other routes.
  */
 public class SecurityConfig {
 
@@ -33,7 +33,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-            .csrf(csrf -> csrf.disable())
+            .csrf(csrf -> csrf.ignoringRequestMatchers("/api/**", "/ws/**"))
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/**", "/ws/**", "/h2-console/**", "/swagger-ui/**", "/api-docs/**").permitAll()
