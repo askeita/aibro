@@ -19,7 +19,7 @@ An intelligent brainstorming assistant that listens to conversations, analyzes d
 ## Architecture
 
 ### Backend (Java Spring Boot)
-- **Spring Boot 3.2.1** with Java 17
+- **Spring Boot 4.0.5** with Java 25
 - RESTful APIs for session management
 - WebSocket support for real-time communication
 - Integration with Claude, OpenAI, and Gemini APIs
@@ -39,8 +39,8 @@ For a more detailed, step-by-step setup guide, see [QUICKSTART.md](QUICKSTART.md
 
 ### Prerequisites
 
-- Java 17 or higher
-- Maven 3.6+
+- Java 25 or higher
+- Maven 3.6.3+
 - Flutter 3.0+
 - API Keys:
   - Anthropic (Claude)

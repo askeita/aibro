@@ -2,18 +2,20 @@
 
 ## Prerequisites Installation
 
-### Install Java 17
+### Install Java 25
 ```bash
-# Ubuntu/Debian
-sudo apt update
-sudo apt install openjdk-17-jdk
+# Ubuntu/Debian (openjdk-25 is not in older apt repositories; use SDKMAN or Adoptium)
+curl -s "https://get.sdkman.io" | bash
+sdk install java 25-tem
 
 # macOS
-brew install openjdk@17
+brew install openjdk@25
 
 # Windows
 # Download from https://adoptium.net/
 ```
+
+Make sure `JAVA_HOME` points to the JDK 25 installation and `java -version` reports 25.
 
 ### Install Maven
 ```bash
@@ -137,7 +139,7 @@ curl -X POST http://localhost:8080/api/keys \
 ## Troubleshooting
 
 ### Backend won't start
-- Check Java version: `java -version` (should be 17+)
+- Check Java version: `java -version` (should be 25+; `JAVA_HOME` must point to JDK 25)
 - Check Maven version: `mvn -version`
 - Check port 8080 is available: `lsof -i :8080`
 

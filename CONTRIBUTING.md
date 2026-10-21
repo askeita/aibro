@@ -21,8 +21,8 @@ Before starting work on a larger feature, consider opening an issue to discuss t
 
 ### Backend (Spring Boot)
 
-- Java 17+
-- Maven 3.6+
+- Java 25+
+- Maven 3.6.3+
 
 Setup:
 
