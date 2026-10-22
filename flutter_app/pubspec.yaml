@@ -28,7 +28,7 @@ dependencies:
   # Audio Recording & Playback
   record: ^6.2.0
   audioplayers: ^5.2.1
-  permission_handler: ^11.1.0
+  permission_handler: ^13.0.2
   
   # Local Storage
   shared_preferences: ^2.5.5
