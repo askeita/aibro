@@ -12,7 +12,7 @@ dependencies:
 
   # UI Components
   cupertino_icons: ^1.0.2
-  flutter_svg: ^2.0.9
+  flutter_svg: ^2.3.0
   google_fonts: ^6.1.0
   
   # State Management
