@@ -57,7 +57,7 @@ dependencies:
   flutter_animate: ^4.3.0
 
   # Text-to-Speech for vocal prompts
-  flutter_tts: ^3.8.5
+  flutter_tts: ^4.2.5
 
 dev_dependencies:
   flutter_test:
